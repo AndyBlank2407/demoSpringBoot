@@ -6,12 +6,12 @@ public class Car {
 
     private String nameHersteller;
     private int anzahlReifen;
-    private boolean hatTüvPlakette;
+    private boolean hatTuvPlakette;
 
     public Car(String nameHersteller, int anzahlReifen, boolean hatTüvPlakette) {
         this.nameHersteller = nameHersteller;
         this.anzahlReifen = anzahlReifen;
-        this.hatTüvPlakette = hatTüvPlakette;
+        this.hatTuvPlakette = hatTüvPlakette;
     }
 
     public String getNameHersteller() {
@@ -23,7 +23,7 @@ public class Car {
     }
 
     public boolean isHatTüvPlakette() {
-        return hatTüvPlakette;
+        return hatTuvPlakette;
     }
 
     @Override
@@ -31,11 +31,11 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return anzahlReifen == car.anzahlReifen && hatTüvPlakette == car.hatTüvPlakette && Objects.equals(nameHersteller, car.nameHersteller);
+        return anzahlReifen == car.anzahlReifen && hatTuvPlakette == car.hatTuvPlakette && Objects.equals(nameHersteller, car.nameHersteller);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameHersteller, anzahlReifen, hatTüvPlakette);
+        return Objects.hash(nameHersteller, anzahlReifen, hatTuvPlakette);
     }
 }

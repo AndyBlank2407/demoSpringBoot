@@ -5,12 +5,13 @@ public class CarService {
 
     private CarRepository carRepository = new CarRepository();
 
-    public void addCar(Car car) {
+    public Car addCar(Car car) {
         carRepository.addCar(car);
+        return car;
     }
 
     public List<Car> getCar(){
-        carRepository.getCars();
+      return  carRepository.getCars();
     }
 
 }
